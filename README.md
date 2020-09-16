@@ -3,7 +3,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-<img src="https://raw.githubusercontent.com/foo2rama/UCIELKSTACKPROJECT/master/NetworkMap.png?token=APYUIYVRU22V5XIMDJ6FPD27MFJJE" alt="networkmap">
+![Image of Network](https://github.com/foo2rama/UCIELKSTACKPROJECT/blob/master/NetworkMap.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the configuration file may be used to install only certain pieces of it, such as Filebeat.
 
