@@ -1,6 +1,6 @@
 
 #####      THIS FILE MUST BE PLACED INTO /etc/ansible/files  #####
-
+### UPDATE LINE 633 with the correct IP address of the ELK stack server do not change the port ###
 
 ######################## Filebeat Configuration ############################
 # This file is a full configuration example documenting all non-deprecated options in
