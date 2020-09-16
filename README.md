@@ -89,7 +89,7 @@ SSH into the control node and follow the steps below:
 - Run the playbook, and navigate to Docker hosts to check that the installation worked as expected.  You can run the sudo docker ps command
 
 
-###TIPS
+### TIPS
 
 - I have found keepings the playbooks at the home location on the servers makes life easier
 - Te Hosts file is where you specifiy the internal network IP and which groups servers belong.
@@ -98,7 +98,7 @@ SSH into the control node and follow the steps below:
 - if you are in a docker you do not need to type sudo as you are already root.
 
 
-###Usefull Commands
+### Usefull Commands
 sudo docker ps (shows active dockers on a machine)
 sudo docker container list -a (shows all dockers on the server)
 sudo docker start <containername> (starts docker)
