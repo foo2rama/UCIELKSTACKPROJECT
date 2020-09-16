@@ -99,8 +99,8 @@ SSH into the control node and follow the steps below:
 
 
 ### Usefull Commands
-sudo docker ps (shows active dockers on a machine)
-sudo docker container list -a (shows all dockers on the server)
-sudo docker start <containername> (starts docker)
-sudo docker attach <containername> opens connection to docker)
-sudo systemctl restart docker (stop restart the docker daemon)
+sudo docker ps (shows active dockers on a machine)  
+sudo docker container list -a (shows all dockers on the server)  
+sudo docker start <containername> (starts docker)  
+sudo docker attach <containername> opens connection to docker)  
+sudo systemctl restart docker (stop restart the docker daemon)  
