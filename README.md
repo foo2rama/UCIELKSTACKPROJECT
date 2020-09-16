@@ -84,7 +84,7 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the filebeat-config.yml file to ansible container.
+- Copy the filebeat-config.yml file to ansible container into the correct location as noted inside the file.
 - Update the hosts file to include the correct address for the ELK server and webservers
 - Run the playbook, and navigate to Docker hosts to check that the installation worked as expected.  You can run the sudo docker ps command
 
@@ -92,10 +92,11 @@ SSH into the control node and follow the steps below:
 ### TIPS
 
 - I have found keepings the playbooks at the home location on the servers makes life easier
-- Te Hosts file is where you specifiy the internal network IP and which groups servers belong.
+- The Hosts file is where you specifiy the internal network IP and which groups servers belong.
 - The ELK Stack can be accessed by aweb broswer pointed at its public IP on port 5601.  http://X.X.X.X:5601
-- if you are attached via a terminal to a docker be carefull using the exit command as it might shut down the docker you are in.  
-- if you are in a docker you do not need to type sudo as you are already root.
+- If you are attached via a terminal to a docker be carefull using the exit command as it might shut down the docker you are in.  
+- If you are in a docker you do not need to type sudo as you are already root.
+- All files should be notated with helpfull hints on how to config them, and where they should be located if needed
 
 
 ### Usefull Commands
