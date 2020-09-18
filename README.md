@@ -25,9 +25,9 @@ The main purpose of this network is to expose load-balanced and monitored instan
 Load balancing ensures that the application will be highly stable, in addition to restricting access to the network.
 The configuration of the Web Servers protects the rest of the network from intrusion, as Dockers protect the host machine.
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
-- _TODO: What does Filebeat watch for?_
-- _TODO: What does Metricbeat record?_
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the files and system resources.
+- Filesbeat monitors the files
+- Metricbeat montiors the system resources.
 
 The configuration details of each machine may be found below.
 
@@ -42,15 +42,15 @@ The configuration details of each machine may be found below.
 
 ### Access Policies
 
-The machines on the internal network are not exposed to the public Internet. 
+The machines on the internal network are not exposed to the public Internet. Some containers; 3 DVWA containers, and the ELKstack container are exposed. 
 
-Only the Jumpbox machine can accept connections from the Internet. Access to this machine is only allowed from computers that have the pgp Key used to create the server.
+Only the Jumpbox machine can accept direct SSH connections from the Internet. Access to this machine is only allowed from computers that have the pgp Key used to create the server.
 
 Machines within the network can only be accessed by SSH with PGPkey access using a key created on the JumpBox.
 
-The one exception is the ELK Stack server which can be accessed via HTTP on port:5601.  
+The one exception is the ELK Stack container which can be accessed via HTTP on port:5601.  
 
-**NOTE** It is recommened that you place an access rule on this machine so that only allowed IP addresses are allowed to connect.
+**NOTE** It is recommened that you place an access rule on the ELK stack machine so that only allowed IP addresses are allowed to connect.
 
 
 ### Elk Configuration
